@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      .jumbotron {
+        padding: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .jumbotron p {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <title>About Us</title>
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    
+    <p class="lead">Vidya Bhaban is an e-learning platform that provides high-quality education for students from classes 5 to 10. Our platform offers a wide range of courses tailored to meet the academic needs of students across various subjects. </p>
+    <hr class="my-4">
+    <p>Explore our website to discover interactive learning resources, practice questions, and comprehensive study materials. Join us on the journey towards academic excellence.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="https://vidyabhaban.com/" role="button">Website</a> <!-- Updated link -->
+    </p>
+  </div>
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
